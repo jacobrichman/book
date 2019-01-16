@@ -1,4 +1,4 @@
-# Custom Personolized Booking System for Google Calendar
+# Personolized Booking System for Google Calendar
 Make your own fully customizable "YouCanBookMe" web page.
 * You must set up Google Oath2 with Google Calendar and enter your credintials in the code.
 
