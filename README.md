@@ -7,3 +7,5 @@ Make your own fully customizable "YouCanBookMe" web page.
 index.php - retrieves an access token and finds all of you calendars<br>
 script.js - sets up calendar settings and retreives events from each calendar<br>
 new.php - sends both parties a confirmation email with a link to add the event to their Google calendar
+
+<img src="screen_shot.png"/>
