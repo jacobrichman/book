@@ -1,0 +1,2 @@
+[16-Jan-2019 08:07:10 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home1/jacobric/public_html/book/new.php on line 19
+[16-Jan-2019 09:16:51 UTC] PHP Parse error:  syntax error, unexpected '$to' (T_VARIABLE) in /home1/jacobric/public_html/book/new.php on line 13

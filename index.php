@@ -1,8 +1,8 @@
 <?php
 $fields = [
-    'refresh_token' => '',
-    'client_id' => '',
-    'client_secret' => '',
+    'refresh_token' => '1/0jVE4yX7N2hxHUGkBYPIUllg5rhK5b0ieVJR8hDtojM',
+    'client_id' => '1007857028442-7a17mdag7acqii4jjf74l2koa7ckan07.apps.googleusercontent.com',
+    'client_secret' => 'cqt4NLl_xUh-LcouAor5YLCr',
     'grant_type' => 'refresh_token'
 ];
 $ch = curl_init('https://www.googleapis.com/oauth2/v4/token');
@@ -12,7 +12,7 @@ $response = curl_exec($ch);
 curl_close($ch);
 $access_token = json_decode($response, true)['access_token'];
 
-$blacklist = [""];
+$blacklist = ["Richman Family Calendar", "Friends' Birthdays","Holidays in United States","Jewish Holidays", "Facebook Events"];
 
 $accountsRequest = json_decode(file_get_contents("https://www.googleapis.com/calendar/v3/users/me/calendarList?access_token=".$access_token),true);
 $timedEvents = [];
