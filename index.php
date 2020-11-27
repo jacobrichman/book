@@ -1,8 +1,8 @@
 <?php
 $fields = [
     'refresh_token' => '1/0jVE4yX7N2hxHUGkBYPIUllg5rhK5b0ieVJR8hDtojM',
-    'client_id' => '1007857028442-7a17mdag7acqii4jjf74l2koa7ckan07.apps.googleusercontent.com',
-    'client_secret' => 'cqt4NLl_xUh-LcouAor5YLCr',
+    'client_id' => '<client_id>',
+    'client_secret' => '<client_secret>',
     'grant_type' => 'refresh_token'
 ];
 $ch = curl_init('https://www.googleapis.com/oauth2/v4/token');
