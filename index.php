@@ -1,8 +1,8 @@
 <?php
 $fields = [
     'refresh_token' => '1/0jVE4yX7N2hxHUGkBYPIUllg5rhK5b0ieVJR8hDtojM',
-    'client_id' => '<client_id>',
-    'client_secret' => '<client_secret>',
+    'client_id' => $_ENV["CLIENT_ID"],
+    'client_secret' => $_ENV["CLIENT_SECRET"],
     'grant_type' => 'refresh_token'
 ];
 $ch = curl_init('https://www.googleapis.com/oauth2/v4/token');
