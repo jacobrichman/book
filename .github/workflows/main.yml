@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Replace image in config
-        uses: datamonsters/replace-action
+        uses: datamonsters/replace-action@v2
         with:
-          files: 'index.php'
+          files: index.php
           replacements: '<client_id>=${{ secrets.CLIENT_ID }},<client_secret>=${{ secrets.CLIENT_SECRET }}'
       - uses: actions/checkout@v2
       - name: Deploy to IBM Cloud Foundry
