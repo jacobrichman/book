@@ -6,11 +6,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Replace image in config
-        uses: datamonsters/replace-action@v2
+      - name: Find and Replace 1
+        uses: jacobtomlinson/gha-find-replace@0.1.2
         with:
-          files: index.php
-          replacements: '<client_id>=${{ secrets.CLIENT_ID }},<client_secret>=${{ secrets.CLIENT_SECRET }}'
+          find: "<client_id>"
+          replace: "${{ secrets.CLIENT_ID }}"
+      - name: Find and Replace 2
+        uses: jacobtomlinson/gha-find-replace@0.1.2
+        with:
+          find: "<client_secret>"
+          replace: "${{ secrets.CLIENT_SECRET }}"
       - uses: actions/checkout@v2
       - name: Deploy to IBM Cloud Foundry
         # You may pin to the exact commit or the version.
