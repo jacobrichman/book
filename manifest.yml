@@ -1,0 +1,7 @@
+---
+applications:
+- name: book
+  buildpack: php_buildpack
+  routes:
+  - route: book.jacobrichman.com
+  memory: 32M
